@@ -7,6 +7,6 @@ class Contact(models.Model):
     phone = models.CharField(max_length=16, verbose_name='手机')
     company = models.CharField(max_length=128, verbose_name='公司')
     title = models.CharField(max_length=64, verbose_name='职务')
-    city = models.CharField(max_length=32, verbose_name='所在城市')
+    city = models.CharField(max_length=512, verbose_name='居住地址')
     graduated = models.CharField(max_length=128, verbose_name='毕业院校')
     address = models.CharField(max_length=512, verbose_name='毕业院校')

@@ -25,7 +25,7 @@ SECRET_KEY = 'uqpk-$y0uvtcckj=zm=j0(u&&=5dltp2af(1fbtm68+l2cce(w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '43.251.158.21', '0.0.0.0']
+ALLOWED_HOSTS = ['127.0.0.1', '43.251.158.21', '0.0.0.0', 'hk.albuscrow.ga']
 
 
 # Application definition

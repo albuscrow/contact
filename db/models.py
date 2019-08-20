@@ -9,3 +9,4 @@ class Contact(models.Model):
     title = models.CharField(max_length=64, verbose_name='职务')
     city = models.CharField(max_length=32, verbose_name='所在城市')
     graduated = models.CharField(max_length=128, verbose_name='毕业院校')
+    address = models.CharField(max_length=512, verbose_name='毕业院校')

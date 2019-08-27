@@ -13,7 +13,7 @@ def export_cvs(modeladmin, request, queryset):
 
     writer = csv.DictWriter(response, fieldnames=header)
     writer.writeheader()
-    for c in Contact.objects.all():
+    for c in queryset:
         writer.writerow(
             {"姓名": c.name, "手机": c.phone, "公司": c.company, "职务": c.title, "居住地址": c.city, "毕业院校": c.graduated})
     return response

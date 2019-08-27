@@ -8,7 +8,7 @@ from db.models import Contact
 
 def export_cvs(modeladmin, request, queryset):
     header = ["姓名", "手机", "公司", "职务", "居住地址", "毕业院校"]
-    response = HttpResponse(content_type='text/csv')
+    response = HttpResponse(content_type='text/csv', charset='gbk')
     response['Content-Disposition'] = 'attachment; filename="symptom_explain.csv"'
 
     writer = csv.DictWriter(response, fieldnames=header)
